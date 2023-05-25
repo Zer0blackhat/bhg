@@ -28,6 +28,7 @@ func main () {
 		log.Panicln(err)
 	}
 	for _, host := range hostSearch.Matches {
-		fmt.Printf("%18s%8d\n", host.IPString, host.Port)
+		fmt.Printf("%18s%8d : ", host.IPString, host.Port)
+		fmt.Printf("%s, %s\n", host.Location.City, host.Location.CountryName)
 	}
 }

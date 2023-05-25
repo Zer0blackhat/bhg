@@ -1,7 +1,7 @@
 package shodan
 
 import (
-	"http"
+	"net/http"
 	"fmt"
 	"encoding/json"
 )
